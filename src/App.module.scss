@@ -1,0 +1,10 @@
+@import '~variables';
+
+.root {
+  background-color: $dark-grey;
+}
+
+.header {
+  text-align: center;
+  padding: $gap-md;
+}

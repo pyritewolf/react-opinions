@@ -1,0 +1,39 @@
+// FONTS
+$body-font: 'PT Sans Caption', 'Georgia', serif;
+$title-font: 'News Cycle', 'Tahoma', sans-serif;
+$font-xs: 0.9rem;
+$font-sm: 1.1rem;
+$font-md: 1.6rem;
+$font-lg: 2.4rem;
+
+// SPACING
+$gap-xs: 0.4rem;
+$gap-sm: 0.8rem;
+$gap-md: 1.6rem;
+$gap-lg: 2.4rem;
+
+// BREAKPOINTS
+$mobile-breakpoint: 720px;
+$mobile: (max-width: $mobile-breakpoint);
+
+// PALETTE
+$primary: #E3AAD6;
+$secondary: #B5D8EB;
+$red: #FFBDD8;
+$orange: #FFC8BA;
+$green: #93DFB8;
+$white: white;
+$lighter-grey: #e6e6e6;
+$light-grey: #aaa;
+$grey: #666;
+$dark-grey: #444;
+$darker-grey: #222;
+$black: black;
+
+// VARIOUS
+$radius: 2px;
+$radius-xl: 15px;
+
+:export {
+  mobile: $mobile-breakpoint;
+}

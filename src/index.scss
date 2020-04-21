@@ -1,0 +1,26 @@
+@import '~variables';
+
+html {
+  font-size: 10px;
+  color: $lighter-grey;
+  background-color: $darker-grey;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'News Cycle';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
