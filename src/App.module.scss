@@ -4,9 +4,10 @@
 
   & > main {
     @include grid;
-    & > * {
-      @include col(6)
-    }
+    padding: $gap-lg 0;
+    
+    & > * { @include col(6) }
+
     & > *:last-of-type:nth-child(odd) {
       @include col(6, 3)
     }

@@ -1,0 +1,34 @@
+@import '~variables';
+
+.input {
+  border: 1px solid $grey;
+  font-size: $font-md;
+  font-family: $body-font;
+  color: $lighter-grey;
+  padding: calc(#{$gap-md} - 1px);
+  outline: 0;
+  border-radius: $radius;
+  transition: 0.2s;
+  background-color: $darker-grey;
+  width: 100%;
+
+  &:hover {
+    transition: 0.2s;
+    border-color: $dark-grey;
+  }
+
+  &.invalid { border-color: $red; }
+
+  &:focus {
+    border-color: $dark-grey;
+    border-bottom-color: $secondary;
+    border-bottom-width: 3px;
+    padding-bottom: calc(#{$gap-md} - 3px);
+  }
+}
+
+.error {
+  font-size: $font-sm;
+  color: $red;
+  margin-top: $gap-xs;
+}
