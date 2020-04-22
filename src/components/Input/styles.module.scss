@@ -14,14 +14,13 @@
 
   &:hover {
     transition: 0.2s;
-    border-color: $dark-grey;
+    border-color: $light-grey;
   }
 
   &.invalid { border-color: $red; }
 
   &:focus {
-    border-color: $dark-grey;
-    border-bottom-color: $secondary;
+    border-color: $secondary;
     border-bottom-width: 3px;
     padding-bottom: calc(#{$gap-md} - 3px);
   }
@@ -31,4 +30,20 @@
   font-size: $font-sm;
   color: $red;
   margin-top: $gap-xs;
+}
+
+.light {
+  & .input {
+    background-color: $lighter-grey;
+    color: $darker-grey;
+    border-color: $light-grey;
+
+    &:hover {
+      border-color: $grey;
+    }
+
+    &:focus {
+      border-color: $secondary;
+    }
+  }
 }

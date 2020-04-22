@@ -1,7 +1,8 @@
 @import '~variables';
 
 .root {
-
+  transition: 0.2s;
+  min-height: 100vh;
   & > main {
     @include grid;
     padding: $gap-lg 0;
@@ -12,11 +13,41 @@
       @include col(6, 3)
     }
   }
+
+  &.light {
+    color: $darker-grey;
+    background-color: $lighter-grey;
+  }
 }
 
 .header {
+  @include grid;
+  align-items: center;
+
   text-align: center;
-  padding: $gap-md;
+  padding: $gap-md 0;
+
+  & > h1 {
+    @include col(10, 1);
+  }
+
+  & .toggle {
+    @include col(1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .icon {  
+      font-size: $font-lg;
+      border-radius: $radius 0 0 $radius;
+      padding: $gap-sm;
+      transition: 0.2s;
+      &:last-of-type { border-radius: 0 $radius $radius 0;}
+    }
+    & .dark { background-color: $dark-grey; }
+    & .light { background-color: $light-grey; }
+  }
 }
 
 .title {

@@ -4,6 +4,7 @@
     background-color: $dark-grey;
     border-radius: $radius;
     padding: $gap-lg;
+    transition: 0.2s;
 
     &.hoverable {
         transition: 0.2s;
@@ -17,4 +18,8 @@
     }
 
     & > * + * { margin-top: $gap-sm; }
+
+    &.light {
+        background-color: $white;
+    }
 }

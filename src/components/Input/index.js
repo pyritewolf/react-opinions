@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classNames from 'classnames';
-import styles from './styles.module.scss';
+
+import { store } from 'context';
+
+import style from './styles.module.scss';
 
 
 function Input({placeholder, type = 'text', value  = '', onChange, error}) {
+  const {theme} = useContext(store);
+
   return (
-    <div className={styles.root}>
-      <input className={classNames(styles.input, error && styles.invalid)} type={type} placeholder={placeholder} value={value} onChange={onChange} />
-      <div className={styles.error}>{error}</div>
+    <div className={classNames(style.root, style[theme])}>
+      <input className={classNames(style.input, error && style.invalid)} type={type} placeholder={placeholder} value={value} onChange={onChange} />
+      <div className={style.error}>{error}</div>
     </div>
   );
 }
