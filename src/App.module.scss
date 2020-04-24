@@ -3,17 +3,7 @@
 .root {
   transition: 0.2s;
   min-height: 100vh;
-  & > main {
-    @include grid;
-    padding: $gap-lg 0;
-    
-    & > * { @include col(6) }
-
-    & > *:last-of-type:nth-child(odd) {
-      @include col(6, 3)
-    }
-  }
-
+  
   &.light {
     color: $darker-grey;
     background-color: $lighter-grey;
@@ -48,8 +38,4 @@
     & .dark { background-color: $dark-grey; }
     & .light { background-color: $light-grey; }
   }
-}
-
-.title {
-  color: $primary;
 }

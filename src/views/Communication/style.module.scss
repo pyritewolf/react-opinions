@@ -1,0 +1,33 @@
+@import '~variables';
+
+.root {
+    @include grid;
+    padding: $gap-lg 0;
+
+    & > * {
+        @include col(10, 1);
+    }
+}
+
+.pills > span {
+    display: inline-block;
+    padding: $gap-sm;
+    margin-right: $gap-sm;
+    border-radius: $radius;
+    background-color: $green;
+    font-size: $font-sm;
+    color: $dark-grey;
+
+    :last-of-type {
+        margin: 0;
+    }
+}
+
+.light .pills > span {
+    color: $white;
+}
+
+.propsExample > * {
+    display: inline-block;
+    margin: $gap-sm;
+}

@@ -1,0 +1,11 @@
+@import '~variables';
+
+.root {
+    @include grid;
+    align-items: center;
+    min-height: 80vh;
+    
+    & > * {
+        @include col(6, 3);
+    }
+}

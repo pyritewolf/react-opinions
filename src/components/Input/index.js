@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import { store } from 'context';
 
-import style from './styles.module.scss';
+import style from './style.module.scss';
 
 
 function Input({placeholder, type = 'text', value  = '', onChange, error}) {

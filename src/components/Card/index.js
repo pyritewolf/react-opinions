@@ -3,12 +3,12 @@ import classNames from 'classnames';
 
 import { store } from 'context';
 
-import styles from './styles.module.scss';
+import style from './style.module.scss';
 
-const Card = ({children, hoverable}) => {
+const Card = ({children, hoverable, ...props}) => {
   const {theme} = useContext(store);
   return (
-    <div className={classNames(styles.root, hoverable && styles.hoverable, styles[theme])}>
+    <div {...props} className={classNames(style.root, hoverable && style.hoverable, style[theme])}>
         {children}
     </div>
   );
